@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
-import {TbCurrencyEuro, TbCut, TbHome2, TbHomeHand, TbCamera, TbMail} from 'react-icons/tb'
+import {TbCurrencyEuro, TbHome2, TbCamera, TbMail} from 'react-icons/tb'
 export default function Navbar() {
+
   return (
     <>
     <div className='w-[90%] h-[2px] bg-white mx-auto mt-2 mb-2 rounded-3xl'></div>
@@ -13,14 +14,14 @@ export default function Navbar() {
         </div>
           <span className='bg-[#ffffff00] text-white font-semibold tracking-wide mt-2'>Accueil</span>
       </Link>
-      <Link href="/galeries" className='flex flex-col justify-center items-center p-2 rounded-2xl'>
+      <Link href="#galerie" className='flex flex-col justify-center items-center p-2 rounded-2xl'>
         <div className='rounded-3xl py-2 px-3 bg-[#ffffffd2] shadow-lg shadow-[#e17055]'>
 
           <TbCamera size={35} color={'#e17055'}/>
         </div>
           <span className='bg-[#ffffff00] text-white font-semibold tracking-wide mt-2'>Galeries</span>
       </Link>
-      <Link href='/tarifs' className='flex flex-col justify-center items-center p-2 rounded-2xl'>
+      <Link href='#tarifs' className='flex flex-col justify-center items-center p-2 rounded-2xl'>
         <div className='rounded-3xl py-2 px-3 bg-[#ffffffd2] shadow-lg shadow-[#e17055]'>
 
           <TbCurrencyEuro size={35} color={'#e17055'}/>

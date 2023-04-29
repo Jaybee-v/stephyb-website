@@ -1,12 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
 import portrait from '@/assets/stephyB.jpg'
+import { FaFacebook, FaInstagram } from "react-icons/fa"
+
 
 export default function Presentation() {
   return (
     <div className='w-[90%] mx-auto bg-white px-1 py-2 rounded-xl z-50 relative'>
         <div className='flex flex-col justify-center'>
-            <h1 className='mx-auto pb-4 pt-1'>StephyB Coiffure</h1>
+            <h1 className='mx-auto pb-1 pt-1'>StephyB Coiffure</h1>
+              <div className='flex mx-auto mb-2'>
+                    <FaFacebook size={35} />
+                    <FaInstagram  size={35}/>
+                </div>
             <Image src={portrait} alt='Portrait de la coiffeuse StephyB' className='rounded-se-3xl rounded-ss-3xl w-[85%] mx-auto'/>
               <article className="mt-4 indent-8 w-[80%] flex flex-col mx-auto justify-center items-center pb-4">
                     <span>
