@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa"
 
 export default function Presentation() {
   return (
-    <div className='w-[90%] mx-auto bg-white px-1 py-2 rounded-xl z-50 relative'>
+    <div className='w-[90%] mx-auto bg-white px-1 py-2 rounded-xl z-30 relative'>
         <div className='flex flex-col justify-center'>
             <h1 className='mx-auto pb-1 pt-1'>StephyB Coiffure</h1>
               <div className='flex mx-auto mb-2'>

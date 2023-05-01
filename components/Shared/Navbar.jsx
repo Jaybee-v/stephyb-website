@@ -1,7 +1,25 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {TbCurrencyEuro, TbHome2, TbCamera, TbMail} from 'react-icons/tb'
+import MiniNavbar from './MiniNavbar';
 export default function Navbar() {
+ const [showMiniNavbar, setShowMiniNavbar] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPosition = window.pageYOffset;
+
+      if (currentScrollPosition > 100 && currentScrollPosition <= 3670) {
+        setShowMiniNavbar(true);
+      } else {
+        setShowMiniNavbar(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -37,6 +55,7 @@ export default function Navbar() {
       </Link>
     </div>
     <div className='w-[90%] h-[2px] bg-white mx-auto mt-1 mb-4'></div>
+    {showMiniNavbar && <MiniNavbar/>}
     </>
   )
 }

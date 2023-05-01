@@ -23,7 +23,7 @@ export default function Footer() {
                 <Logo />
                 <div className="ms-8 flex flex-col">
                     <div>bscoiffure@hotmail.fr</div>
-                    <div>06.18.56.08.78</div>
+                    <div className='text-[#e17055] font-bold text-lg'>06.18.56.08.78</div>
                 </div>
             </div>
             <div className="flex flex-col items-center">
@@ -31,13 +31,13 @@ export default function Footer() {
                 <Link href="/" className="py-1">
                     Accueil
                 </Link>
-                <Link href="/galerie" className="py-1">
+                <Link href="#galerie" className="py-1">
                     Galerie
                 </Link>
-                <Link href="/tarifs" className="py-1">
+                <Link href="#tarifs" className="py-1">
                     Tarifs
                 </Link>
-                <Link href="/contact" className="py-1">
+                <Link href="#contact" className="py-1">
                     Contact
                 </Link>
             </div>

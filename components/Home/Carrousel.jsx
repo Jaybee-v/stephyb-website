@@ -22,7 +22,7 @@ export default function Carrousel({slides}) {
     setCurrentIndex(slideIndex)
   }
     return (
-    <div className="max-w-[600px] max-h-[850px] w-full m-auto px-4 relative">
+    <div className="max-w-[600px] max-h-[950px] w-full m-auto px-4 relative">
       <Image src={slides[currentIndex].url} alt={slides[currentIndex].alt} className='w-full h-[380px] rounded-2xl bg-center bg-cover duration-500'/>
       <div className='absolute top-[50%] translate-x-0 translate-y-[-50%] left-5 text-2xlcursor-pointer' onClick={prevSlide}>
         <BsChevronCompactLeft size={40} color={'#fff'}/>

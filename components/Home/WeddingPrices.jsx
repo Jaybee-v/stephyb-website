@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function WeddingPrices() {
   return (
-    <div className='w-[90%] bg-white mx-auto p-3 mb-3'>
-        <h6 className='pt-1 pb-3'>Tarifs prestation mariage</h6>
+    <div className='w-[90%] bg-white mx-auto pb-6 pt-2 rounded-xl mb-3 px-5 z-30 relative'>
+        <h6 className='pt-1 pb-3 text-center'>Tarifs prestation mariage</h6>
         <div className='w-full h-full border-2 border-[#fab1a0] p-3 rounded-2xl'>
             <div className="">
                     <div className="text-center py-2 text-lg">

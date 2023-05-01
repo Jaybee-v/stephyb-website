@@ -11,6 +11,7 @@ import SeparationBar from '@/components/Shared/SeparationBar'
 import WeddingCarrousel from '@/components/Home/WeddingCarrousel'
 import WeddingPrices from '@/components/Home/WeddingPrices'
 import CutPrices from '@/components/Home/CutPrices'
+import ContactForm from '@/components/Home/ContactForm'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,13 +26,20 @@ export default function Home() {
 
   <SeparationBar/>
   <section id='galerie'>
-  <ColorCarrousel/>
+ <BackgroundShapes/>
   <WeddingCarrousel/>
+  <ColorCarrousel/>
   </section>
   <SeparationBar/>
-  <section id='tarifs'>
+  <section id='tarifs' className=''>
+ <BackgroundShapes/>
     <WeddingPrices/>
+ <BackgroundShapes/>
     <CutPrices/>
+  </section>
+  <SeparationBar/>
+  <section id='contact'>
+    <ContactForm/>
   </section>
   <SeparationBar/>
   <Footer/>
